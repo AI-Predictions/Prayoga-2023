@@ -6,7 +6,7 @@ import joblib
 # Declare a Flask app
 app = Flask(__name__)
 
-@app.route('/', methods=['GET', 'POST'])
+@app.route('/predict', methods=['GET', 'POST'])
 def main():
     
     # If a form is submitted
