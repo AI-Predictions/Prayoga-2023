@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>House Rent Prediction</title>
+        <link rel="stylesheet" href="/static/swiper-bundle.min.css">
+        <link rel="stylesheet" href="/static/style2.css">
+    </head>
+    <body>
+      <header>
+        <div class="nav-bar">
+          <a href="" class="logo">AI PREDICTIONS</a>
+          <div class="navigation">
+            <div class="nav-items">
+              <i class="uil uil-times nav-close-btn"></i>
+              <a href="/"> Home</a>
+              <a href="/about"> About</a>
+              <a href="/predict">Model</a>
+            </div>
+          </div>
+          <i class="uil uil-apps nav-menu-btn"></i>
+        </div>
+      </header>
+        <div class="form">
+            <form name="form", method="POST">
+            <div class="title" style="text-align: center;">House Rent</div>
+            <div class="subtitle" style="text-align: center;">Prediction</div>
+            <div class="input-container ic1">
+              <input class="input" type="int" name="Avg. Area Income" placeholder=" " required autocomplete="off"/>
+              <div class="cut cut-short"></div>
+              <label class="placeholder">Avg. Area Income</label>
+            </div>
+            <div class="input-container ic2">
+              <input class="input" type="float" name="Avg. Area House Age" placeholder=" " required autocomplete="off"/>
+              <div class="cut"></div>
+              <label class="placeholder">Avg. Area House Age</label>
+            </div>
+            <div class="input-container ic2">
+              <input class="input" type="float" name="Avg. Area Number of Rooms" placeholder=" " required autocomplete="off"/>
+              <div class="cut"></div>
+              <label class="placeholder">Avg. Area Number of Rooms</>
+            </div>
+            <div class="input-container ic2">
+                <input class="input" type="float" name="Avg. Area Number of Bedrooms" placeholder=" " required autocomplete="off"/>
+                <div class="cut"></div>
+                <label class="placeholder">Avg. Area Number of Bedrooms</label>
+              </div>
+              <div class="input-container ic2">
+                <input class="input" type="float" name="Area Population" placeholder=" " required autocomplete="off"/>
+                <div class="cut cut-short"></div>
+                <label class="placeholder">Area Population</label>
+              </div>
+            <button value="Submit" type="text" class="submit">Submit</button>
+            <div class="output" style="text-align: center;">Estimated Rent : {{ output }}</div>
+            </form> 
+        </div>
+    </body>
+</html>
